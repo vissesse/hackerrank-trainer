@@ -14,13 +14,12 @@ class Polygon {
         let sum = 0;
         for (let i = 0; i < this.side_lengths.length; i++) {
             sum += this.side_lengths[i];
-
         }
-
         return sum
     }
 }
 
+// create an instance
 const rectangle = new Polygon([10, 20, 10, 20]);
 const square = new Polygon([10, 10, 10, 10]);
 const pentagon = new Polygon([10, 20, 30, 40, 43]);

@@ -22,7 +22,3 @@ function getSecondLargest(nums) {
     console.log("second lag number", secondLargestNumber)
     return secondLargestNumber
 }
-
-
-
-console.log(getSecondLargest([2, 3, 6, 6, 5]))
