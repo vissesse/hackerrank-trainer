@@ -34,9 +34,8 @@ function solve(meal_cost, tip_percent, tax_percent) {
 
     var tip = (meal_cost / 100) * tip_percent
     var tax = (tax_percent / 100) * tip_percent
-    console.log(0.08 * 20)
+
     var total_cost = meal_cost + tip + tax
-    console.log(total_cost.toFixed(2))
     console.log(Math.round(total_cost))
 
 }
@@ -51,4 +50,7 @@ function main() {
     solve(meal_cost, tip_percent, tax_percent);
 }
 
+
 solve(100, 15, 8)
+console.log("------------")
+solve(12.00, 20, 8)
