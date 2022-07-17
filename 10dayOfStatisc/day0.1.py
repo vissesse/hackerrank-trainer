@@ -41,10 +41,8 @@ def get_the_mode(array: list):
 
 if __name__ == '__main__':
     n = int(input())
-    arr = list(map(int, input().rstrip().split()))
+    lista= list(map(int, input().rstrip().split()))
     
-    
-    lista = arr
     
     lista = sorted(lista)
     mean = get_the_mean(lista)
