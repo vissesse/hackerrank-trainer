@@ -38,12 +38,10 @@ def get_the_mode(array: list):
     return popular_one
 
 
-
 if __name__ == '__main__':
     n = int(input())
-    lista= list(map(int, input().rstrip().split()))
-    
-    
+    lista = list(map(int, input().rstrip().split()))
+
     lista = sorted(lista)
     mean = get_the_mean(lista)
     median = get_the_median(lista)
