@@ -16,7 +16,7 @@ import sys
 
 def interQuartile(values, freqs):
     # Print your answer to 1 decimal place within this function
-
+    pass
 if __name__ == '__main__':
     n = int(input().strip())
 
