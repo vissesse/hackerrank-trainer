@@ -62,8 +62,14 @@ function ms_rex() {
 }
 
 const testre = /ab+c/
-console.log(testre.test("abbbc"))
+console.log(testre.test("abbbbbbrerer"))
 
+
+function get_all_integer(params) {
+    //(?:a) mach but not remember
+    const re = new RegExp("\\d+", 'g')
+    return re
+}
 
 
 console.log("###################################")
@@ -71,3 +77,12 @@ console.log(regexVar().test("aeeaea"))
 console.log(regexVar().exec("isi"))
 console.log("###################################")
 console.log(ms_rex().test("Dr.Carlos"))
+
+console.log("############ regular #############")
+const str_test = "102, 1948948 and 1.3 and 4.5"
+console.log(get_all_integer().test(str_test))
+console.log(get_all_integer().exec(str_test))
+const r = str_test.match(get_all_integer())
+for (const e of r) {
+    console.log(e);
+}
