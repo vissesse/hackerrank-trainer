@@ -41,3 +41,5 @@ function regexVar() {
 
         console.log(!!s.match(re));
     }
+
+}

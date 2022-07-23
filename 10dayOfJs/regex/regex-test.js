@@ -61,6 +61,10 @@ function ms_rex() {
     return /^(Mr|Mrs|Ms|Dr|Er)[.]([a-zA-Z])+$/
 }
 
+const testre = /ab+c/
+console.log(testre.test("abbbc"))
+
+
 
 console.log("###################################")
 console.log(regexVar().test("aeeaea"))
