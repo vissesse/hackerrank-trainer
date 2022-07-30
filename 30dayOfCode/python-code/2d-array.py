@@ -7,12 +7,8 @@ import re
 import sys
 
 
-if __name__ == '__main__':
-
-    arr = []
-
-    for _ in range(6):
-        arr.append(list(map(int, input().rstrip().split())))
+def hour_glass(array: list[list]):
+    sum_list = [0]
 
 
 def data():
@@ -24,3 +20,14 @@ def data():
         [0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0]
     ]
+
+
+if __name__ == '__main__':
+
+    arr = data()
+
+    # for _ in range(6):
+    #    arr.append(list(map(int, input().rstrip().split())))
+
+    for row in arr:
+        for col in row:
