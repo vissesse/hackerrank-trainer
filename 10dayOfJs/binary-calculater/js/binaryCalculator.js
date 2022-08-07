@@ -43,10 +43,6 @@ function click_eql(e) {
         const automata = prepare_calc(res)
         const result = calculate(automata)
 
-        console.log(automata)
-        console.log(res.split(`/`))
-
-
 
         document.getElementById('res').innerHTML = (result).toString(2)
 
@@ -60,7 +56,6 @@ function operate(e) {
 }
 
 function calculate(array) {
-    console.log("get calculate")
     let lista = array
     let result = 0
 
@@ -98,7 +93,6 @@ function calculate(array) {
 //
 //
 function prepare_calc(values) {
-    console.log(values)
     let automata = []
     let value = ""
     for (let i = 0; i < values.length; i++) {

@@ -9,6 +9,11 @@ import sys
 
 def hour_glass(array: list[list]):
     sum_list = [0]
+    sum_hour_class = 0
+    for row in array:
+        for col in row:
+            
+            sum_list.append()
 
 
 def data():
@@ -29,5 +34,4 @@ if __name__ == '__main__':
     # for _ in range(6):
     #    arr.append(list(map(int, input().rstrip().split())))
 
-    for row in arr:
-        for col in row:
+ 

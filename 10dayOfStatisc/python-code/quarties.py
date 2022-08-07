@@ -1,10 +1,10 @@
 #!/bin/python3
-
 import math
 import os
 import random
 import re
-import sys
+import sys 
+
 
 #
 # Complete the 'quartiles' function below.
@@ -17,9 +17,8 @@ import sys
 def get_quartile(arr: list): 
     m_length = int(len(arr)/2)
     if len(arr) % 2 == 0: 
-        
         return  int((arr[m_length-1] + arr[m_length])/2)
-
+    
     return arr[m_length]
 
 
