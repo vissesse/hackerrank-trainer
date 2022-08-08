@@ -16,9 +16,9 @@ class Solution:
         new_node = Node(data)
         if head is None:
             return new_node
-        if head.next is None:
-             head.next = new_node
-        else:   
+        elif head.next is None:
+            head.next = new_node
+        else:
             self.insert(head.next, data)
             # go to de last node
         return head
