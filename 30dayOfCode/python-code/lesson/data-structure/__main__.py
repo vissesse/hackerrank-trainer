@@ -8,7 +8,8 @@ if __name__ == '__main__':
     lista.__str__()
      
     print()
-    print(lista.rem(19))
+    #print(lista.find_by_index(0))
+    print(lista.add_into_index(10, 100))
     print()
     #print( 'all', lista.all())
     lista.__str__()

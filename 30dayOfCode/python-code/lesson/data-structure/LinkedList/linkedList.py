@@ -49,6 +49,20 @@ class LinkedList(ListABC):
                 cursor = cursor.get_next()
             cursor.set_next(node)
 
+    def add_into_index(self, index, data):
+        """"""
+        new_node = Node(data)
+
+        if index == 0:
+            new_node.set_next(self.head)
+            self.head = new_node
+        else:
+            node = self.find_by_index(index-1)
+            next_node = node.get_next()
+            new_node.set_next(next_node)
+            node.set_next(new_node)
+        
+
     def rem(self, data: any):
         cursor = self.head
         node = None
@@ -63,7 +77,7 @@ class LinkedList(ListABC):
                     break
 
                 cursor = cursor.get_next()
-                
+
         return node if node else False
 
     def all(self):
@@ -92,12 +106,12 @@ class LinkedList(ListABC):
                 node = cursor.get_next()
                 cursor.set_next(node.get_next())
                 break
-            
+
             cont += 1
             cursor = cursor.get_next()
         return node if node else -1
-    
-    def find(self, data: any)->None or Node:
+
+    def find(self, data: any) -> None or Node:
         cursor = self.head
         node = None
         while cursor:
@@ -105,23 +119,22 @@ class LinkedList(ListABC):
                 node = cursor
                 break
             cursor = cursor.get_next()
-            
+
         return node
-    
-    def update(self, index: int, data: any)->Node:
+
+    def update(self, index: int, data: any) -> Node:
         cursor = self.head
         cont = 0
         while cursor:
             if cont == index:
                 cursor.set_data(data)
                 break
-                
+
             cont += 1
             cursor = cursor.get_next()
         return True if cursor else False
-    
-    
-    def find_by_index(self, index: int)->Node:
+
+    def find_by_index(self, index: int) -> Node:
         cursor = self.head
         cont = 0
         node = None
@@ -130,9 +143,9 @@ class LinkedList(ListABC):
                 node = cursor
             cont += 1
             cursor = cursor.get_next()
-            
+
         return node
-    
+
     def __str__(self) -> str:
         cursor = self.head
         while cursor:
