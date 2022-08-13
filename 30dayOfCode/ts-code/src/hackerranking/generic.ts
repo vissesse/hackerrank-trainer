@@ -35,7 +35,6 @@ export class Printer<T>{
      printArray(array: T[]){
         for (const iterator of array) {
             console.log(iterator)
-            
         }
 
      }
