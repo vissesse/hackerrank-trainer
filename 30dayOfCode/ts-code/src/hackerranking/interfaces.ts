@@ -43,6 +43,9 @@ function main() {
     let divorSum = calculator.divisorSum(value)
     console.log(`I implemented: AdvancedArithmetic`);
     console.log(divorSum);
-
-
+ 
+}
+ 
+export{
+    main
 }
