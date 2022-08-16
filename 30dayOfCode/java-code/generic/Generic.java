@@ -5,15 +5,17 @@ class Printer <T> {
     /**
     *    Method Name: printArray
     *    Print each element of the generic array on a new line. Do not return anything.
-    *    @param A generic array
+    *    @param array generic array
     **/
     
     // Write your code here
     public void printArray(T[] array){
-        forEach( elemento | array){
-            System.out.println(elemento)
+        for (T t : array) {
+             
+            System.out.println(t);
         }
     }
+
 
 }
 
